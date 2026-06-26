@@ -1,6 +1,6 @@
 # Real-Time Object Detection System
 
-A real-time object detection and classification system built using YOLOv8 
+A real-time object detection and classification system built using YOLOv8
 and OpenCV, running on NVIDIA GPU with CUDA acceleration.
 
 ## Features
@@ -25,31 +25,43 @@ and OpenCV, running on NVIDIA GPU with CUDA acceleration.
 
 ### 1. Clone the repository
 
-git clone https://github.com/yourusername/CV_Detection_Project.git
+```
+git clone https://github.com/yourusername/CV-Detection-Project.git
 cd CV_Detection_Project
+```
 
 ### 2. Create virtual environment
 
-python -m venv venv
-venv\Scripts\activate
+```
+python -m venv venv312
+venv312\Scripts\activate
+```
 
 ### 3. Install dependencies
 
+```
 pip install -r requirements.txt
+```
 
 Note: The above installs CPU version of PyTorch.
 For GPU support with CUDA 12.4 run this instead:
 
+```
 pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu124
+```
 
 ### 4. Download YOLOv8 model
 
+```
 python -c "from ultralytics import YOLO; YOLO('yolov8m.pt')"
 move yolov8m.pt models\yolov8m.pt
+```
 
 ### 5. Run the detector
 
+```
 python detector.py
+```
 
 ## Controls
 
@@ -58,6 +70,7 @@ python detector.py
 
 ## Project Structure
 
+```
 CV_Detection_Project/
     assets/          — test images or videos
     logs/            — auto generated CSV detection logs
@@ -66,6 +79,7 @@ CV_Detection_Project/
     detector.py      — main detection script
     requirements.txt — python dependencies
     README.md        — project documentation
+```
 
 ## Future Scope
 
@@ -81,7 +95,6 @@ Claude was used for:
 - Architecture planning and technology stack decisions
 - Code structuring and commenting best practices
 - Debugging CUDA and PyTorch installation issues
-
 
 All code was implemented, tested, and validated on a local development environment with NVIDIA RTX 3050 GPU.
 
