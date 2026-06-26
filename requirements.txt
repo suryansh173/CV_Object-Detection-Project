@@ -1,0 +1,9 @@
+ultralytics==8.3.57
+opencv-python==4.11.0.86
+torch==2.6.0+cu124
+torchvision==0.21.0+cu124
+torchaudio==2.6.0+cu124
+numpy
+pandas
+pillow
+cvzone

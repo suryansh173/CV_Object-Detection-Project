@@ -1,0 +1,26 @@
+# virtual environment - never push this
+venv312/
+
+# model weights - too large for github
+models/
+
+# logs - generated automatically
+logs/
+
+# snapshots - generated automatically
+snapshots/
+
+# python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# environment variables
+.env
+
+# VS Code settings
+.vscode/
+
+# windows
+Thumbs.db
+desktop.ini
