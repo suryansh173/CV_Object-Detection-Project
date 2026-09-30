@@ -26,15 +26,18 @@ and OpenCV, running on NVIDIA GPU with CUDA acceleration.
 ### 1. Clone the repository
 
 ```
-git clone https://github.com/yourusername/CV-Detection-Project.git
+git clone https://github.com/suryansh173/CV-Detection-Project.git
 cd CV_Detection_Project
 ```
 
 ### 2. Create virtual environment
 
 ```
-python -m venv venv312
+# Windows
 venv312\Scripts\activate
+
+# Linux / macOS
+source venv312/bin/activate
 ```
 
 ### 3. Install dependencies
@@ -43,8 +46,8 @@ venv312\Scripts\activate
 pip install -r requirements.txt
 ```
 
-Note: The above installs CPU version of PyTorch.
-For GPU support with CUDA 12.4 run this instead:
+Note: If `requirements.txt` does not include PyTorch, install the GPU
+build for CUDA 12.4 with:
 
 ```
 pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu124
